@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+<script>
+  // let name = "Hello my name is Ankit and i am from morena";
+  // let longName = 0;
+  // let longWord = " ";
+  // let newName = name.split(" ");
+  // console.log("@SN ", newName);
+  // for (let i = 0; i < newName.length; i++) {
+  //   if (longName < newName[i].length) {
+  //     longWord = newName[i];
+  //   }
+  // }
+  // console.log("@SN ", longWord);
+
+  let name = "Hello my name is Ankit and i am from morena";
+  let longName = "";
+  let longWord = "";
+  for (let i = 0; i < name.length; i++) {
+    let ch = name.charAt(i);
+    if (ch == " ") {
+      if (longWord.length > longName.length) {
+        longName = "";
+        longName = longWord;
+        longWord = "";
+      } else {
+        longWord = "";
+      }
+    } else {
+      longWord = longWord + ch;
+    }
+  }
+  console.log("@SN ", longName);
+
+  //   let name = "Hello my name is Ankit and i am from morena";
+
+  //   function long(str) {
+  //     str = str.split(" ");
+  //     return str.sort((a, b) => b.length - a.length)[0];
+  //   }
+
+  //   console.log("@SN ", long(name));
+</script>
